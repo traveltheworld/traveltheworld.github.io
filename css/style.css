@@ -1,0 +1,424 @@
+.bb{
+font-family: 'Spicy Rice', cursive;
+	text-align: center;
+	font-size: 50px;
+
+} 
+
+body{
+ background-image: url("../img/ep_naturalwhite.png");
+}
+header{
+ margin-top: 50px;
+ font-family: Cuprum, Arial, Helvetica, sans-serif;
+}
+.dws-menu *{
+ margin: 0;
+ padding: 0;
+}
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+}
+.dws-menu > ul{
+ display: flex;
+ justify-content: center;
+}
+.dws-menu > ul li{
+ position: relative;
+ border-right: 1px solid #c7c8ca;
+}
+.dws-menu > ul li:first-child{
+ border-left: 1px solid #b2b3b5;
+}
+.dws-menu > ul li:last-child{
+ border-right: 1px solid #babbbd;
+}
+.dws-menu > ul li > a i.fa{
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 18px;
+}
+.dws-menu > ul li a{
+ display: block;
+ /* Постійне посилання - викор для редагування та використання цього градієнта: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3*/
+ 
+ background: -webkit-linear-gradient(top,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* Chrome10-25,Safari5.1-6 */
+ 
+ padding: 15px 30px 15px 40px;
+ font-size: 14px;
+ color: #454547;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+.dws-menu li a:hover{
+ /* Постійне посилання - викор для редагування та використання цього градієнта: http://colorzilla.com/gradient-editor/#e0e1e5+0,454547+2,454547+98,e0e1e5+100 */
+ background: -webkit-linear-gradient(top,  rgba(224,225,229,1) 0%,rgba(69,69,71,1) 2%,rgba(69,69,71,1) 98%,rgba(224,225,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+
+ color: #ffffff;
+ box-shadow: 1px 5px 10px -5px black;
+ transition: all 0.3s ease;
+}
+
+/*sub menu*/
+.dws-menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+}
+.dws-menu li > ul li{
+ border: 1px solid #c7c8ca;
+}
+.dws-menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+ background: #e4e4e5;
+}
+.dws-menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+.dws-menu li:hover > ul{
+ display: block;
+}
+
+
+
+
+* 
+a:hover{
+		color: #FFFAFA;
+		text-decoration: underline;/* ефект при неведенні мишки на текст*/
+	}
+
+.search {
+  
+  width: 15%;
+margin: 0px 0px 0px 1500px;
+  
+  position: relative;/*щоб норм стояло під назвою*/
+}
+
+.search input {
+  /* викл бордюри у інпутов */
+  border: none;
+}
+
+/* стилі для поля ввода */
+.search .input {
+  width: 100%;
+
+  /*  верхній (8px) нижній (9px) 
+  ** внутренній отступ справа (37px) */
+  padding: 8px 37px 9px 15px;
+
+  /* щоб ширина поля ввода (100%) включала в себе внутр відступи */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  /* двнутр тіні */
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 1px 2px rgba(0,0,0,0.3);
+
+  /* заукругл угли */
+  border-radius: 20px;
+
+  background: #EEE;
+  font: 13px Tahoma, Arial, sans-serif;
+  color: #555;
+  outline: none;
+}
+
+/* оформлення поля при наведенні курсора */
+.search .input:focus {
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+  background: #E8E8E8;
+  color: #333;
+}
+
+/* кнопка отправки */
+.search .submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 37px;
+
+  /* кнопка на всю висоту форми */
+  height: 100%;
+
+  cursor: pointer;
+  background: url(https://lh4.googleusercontent.com/-b-5aBxcxarY/UAfFW9lVyjI/AAAAAAAABUg/gQtEXuPuIds/s13/go.png) 50% no-repeat;
+
+  /* прозрачность кнопки відправки */
+  opacity: 0.5;
+}
+
+/* кнопка відправки при наведенні курсора прозрачна*/
+.search .submit:hover {
+  opacity: 0.8;
+}
+
+
+input[type="search"] {
+  -webkit-appearance: none; /* дана властивість необхідно для того, щоб в браузерах
+** Chrome і Safari можна було стилізувати інпут */
+}
+
+
+.opis{
+	padding: 20px;
+}
+.advantages__container{
+	display: flex;
+	justify-content: center;
+}
+.advantages{
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	flex-wrap: wrap; /*щоб перекилувало на новий рядок блок*/
+}
+.advantages__item{
+width: 20%;
+}
+html,
+body{
+height: 100px;
+}
+body{
+	display: flex;
+	flex-direction: column;
+}
+main{
+	flex-grow: 1;
+}
+.text1{
+	color: #000;
+	font-family: 'Raleway', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Skranji', cursive;
+}
+.text11{
+	color: #C71585;
+	font-family: 'Raleway', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Poppins', sans-serif;
+}
+.text2{
+	color: #000;
+	font-family: 'Raleway', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Skranji', cursive;
+}
+.text22{
+	color: #C71585;
+	font-family: 'Raleway', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Poppins', sans-serif;
+}
+.text3{
+	color: #000;
+	font-family: 'Raleway', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Skranji', cursive;
+}
+.text33{
+	color: #C71585;
+	font-family: 'Raleway', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Poppins', sans-serif;
+}
+
+.n{
+	height: 250px;
+	width: 350px;
+	text-align: center;
+	margin: 10px 0px 0px 220px;
+border-radius: 0 40px;/*завкругення боків*/
+
+}
+.m{
+	height: 250px;
+	width: 350px;
+text-align: center;
+	margin: 10px 0px 0px 220px;
+border-radius: 0 40px;/*завкругення боків*/
+
+}
+.k{
+	height: 250px;
+	width: 350px;
+	text-align: center;
+	margin: 0px 0px 0px 220px;
+	border-radius: 0 40px;/*завкругення боків*/
+	
+}
+.leftimg {
+    float:right; 
+    margin: 10px 10px 15px 0; 
+    border-radius: 0 40px;/*завкругення боків*/
+   }
+
+
+/* pekin.html -редагування*/
+.pp{
+	text-align: center;
+	font-size: 65px;
+	font-family: 'Kumar One Outline', cursive;
+}
+.pp1{
+	font-family: 'Kumar One Outline', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+font-size: 30px;
+}
+/*знизу оформлення першої ФОТКИ В ДОКУМЕНТІ pekin.html*/
+* {box-sizing: border-box;}
+.caption-top {
+  width: 800px;
+  height: 400px;
+  margin: 50px auto 0;
+  border: 5px solid #E06B2A;
+  position: relative;
+}
+.caption-top img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.caption-top h2 {
+  margin: 0;
+  color: white;
+  line-height: 1.1;
+  font-size: 1.2em;
+  font-weight: 200;
+  padding: 10px 20px 10px 10px;
+  border-bottom-right-radius: 20px;
+  background: #E06B2A; 
+  position: absolute;
+  top: -5px;
+  left: 0;
+  box-shadow: -3px -1px 3px -3px #E06B2A, 5px 10px 20px -5px hsla(0, 0%, 0%, .4);
+}
+.date {
+  font-family: "Open Sans", sans-serif;
+  font-size: .7em;
+}
+/*знизу оформлення cередньої ФОТКИ В ДОКУМЕНТІ pekin.html*/
+* {box-sizing: border-box;}
+.triangle-caption {
+	
+	float: right;
+  position: relative;
+  margin: 10px 10px 15px 0;
+  overflow: hidden;
+  width: 500px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+.triangle-caption img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.caption {
+	
+  text-align:right;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  color: white;
+  line-height: 1;
+  padding: 0 13px 13px 0;
+}
+.triangle-caption:after {
+  background: #a90a0a;
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  bottom: -110px;
+  right: -110px;
+  transform: rotate(45deg);
+}
+.caption p {margin: 10px 0 0;}
+.day {
+  position: relative;
+  top: -10px;
+  font-family: 'Rozha One', serif;
+}
+.year {
+  font-size: 1.5em;
+  font-family: 'Rozha One', serif;
+}
+
+/*знизу оформлення останньої ФОТКИ В ДОКУМЕНТІ pekin.html*/
+*, *:after {box-sizing: border-box;}
+.shadow-border {
+
+	float: center;
+  width: 400px;
+  margin: 50px auto 0;
+  position: relative;
+}
+ .shadow-border:after {
+  content:"";
+  width: 100%;
+  height: calc(100% - 20px);
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  z-index: 1;
+  border: 5px solid #FF9B6C;
+}
+.shadow-border img {
+
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  box-shadow: 4px 4px 20px 0 rgba(0,0,0,.25)
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+
+width: 100%;
+height: 100%;
+background:#000; 
+margin: 0 auto;
+text-align: center;
+padding-top: 10px; 
+}
+
+footer p{
+	color: white;
+}
+
+.social img{
+	justify-content: center;
+	text-align: center;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	}
+.social img:hover{
+	background-color: #808080;
+	border-radius: 30%;
+}
